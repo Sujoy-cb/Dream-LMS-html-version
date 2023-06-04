@@ -1,0 +1,78 @@
+/* Common Css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+ul,ol{
+    display: inline-block;
+    list-style: none;
+}
+a,a:hover,a:active{
+    display: inline-block;
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Css */
+.navbar{
+    background: #fff !important;
+    padding: 0 !important;
+}
+.navbar ul li a{
+    font-size: 16px;
+    color: #444 !important;
+    font-weight: 400;
+}
+form .searchbar{
+    width: 595px;
+    margin-left: 20px;
+    position: relative;
+}
+form .searchbar .srch-icon{
+    position: absolute;
+    top: 7px;
+    left: 20px;
+    font-size: 20px;
+    color: #939292;
+    background: transparent;
+    border: none;
+}
+form .searchbar input{
+    width: 100%;
+    border: 1px solid #444;
+    border-radius: 25px;
+    padding: 10px 50px;
+    outline: 0;
+}
+.navbar span{
+    padding: 20px;
+}
+.navbar .cart a{
+    font-size: 20px;
+    color: #1e1e1e;
+}
+.navbar .loginbtn a{
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    line-height: 36px;
+    background: #000;
+    border: 1px solid #000;
+    padding: 5px 25px;
+}
+.navbar .language select{
+    border: none;
+}
+
+/* Banner part */
+#banner{
+    height: 500px;
+    background: red;
+}
+
