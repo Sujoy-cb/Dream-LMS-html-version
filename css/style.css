@@ -30,7 +30,7 @@ h1,h2,h3,h4,h5,h6,p{
     font-weight: 400;
 }
 form .searchbar{
-    width: 595px;
+    width: 550px;
     margin-left: 20px;
     position: relative;
 }
@@ -68,6 +68,7 @@ form .searchbar input{
 }
 .navbar .language select{
     border: none;
+    outline: 0;
 }
 
 /* Banner part */
