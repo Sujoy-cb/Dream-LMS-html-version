@@ -1,5 +1,6 @@
 /* Common Css */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700;800;900&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -55,15 +56,16 @@ form .searchbar input{
 }
 .navbar .cart a{
     font-size: 20px;
-    color: #1e1e1e;
+    color: #EB4462;
 }
 .navbar .loginbtn a{
     font-size: 18px;
     color: #fff;
     font-weight: 500;
     line-height: 36px;
-    background: #000;
-    border: 1px solid #000;
+    background: #392C7D;
+    border: 1px solid #392C7D;
+    border-radius: 5px;
     padding: 5px 25px;
 }
 .navbar .language select{
@@ -73,7 +75,11 @@ form .searchbar input{
 
 /* Banner part */
 #banner{
-    height: 500px;
-    background: red;
+    background: #fff;
+}
+#banner .image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
