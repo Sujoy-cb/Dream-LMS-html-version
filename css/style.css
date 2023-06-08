@@ -21,6 +21,12 @@ h1,h2,h3,h4,h5,h6,p{
     margin: 0;
     padding: 0;
 }
+.heading h2{
+    font-size: 34px;
+    color: #444;
+    font-weight: 600;
+    line-height: 1.25rem;
+}
 
 /* Navbar Css */
 .navbar{
@@ -122,12 +128,7 @@ form .searchbar input{
     background: #f5f5f5;
     padding: 80px 0;
 }
-#course-selection h2{
-    font-size: 34px;
-    color: #444;
-    font-weight: 600;
-    line-height: 1.25rem;
-}
+
 #course-selection p{
     font-size: 16px;
     color: #444;
@@ -217,4 +218,59 @@ form .searchbar input{
     height: 40px;
     text-align: center;
     line-height: 40px;
+    transform: translateY(-50%);
+}
+
+/* Review part */
+#review-part{
+    background: #f5f5f5;
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+#review-part .review-slider{
+    position: relative;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.59);
+}
+#review-part .review-slider .slider-item{
+    display: flex;
+    background: #fff;
+    padding: 40px;
+}
+#review-part .review-slider .slider-item .review-text{
+    width: 70%;
+}
+#review-part .review-slider .slider-item .image{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+#review-part .review-slider .slider-item .image h6{
+    font-size: 18px;
+    color: #343434;
+    font-weight: 600;
+    line-height: 26px;
+    text-align: center;
+}
+#review-part .review-slider .slider-item .image p{
+    font-size: 16px;
+    color: #939292;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+}
+#review-part .review-slider .next{
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    background: #343434;
+    border: 1px solid #343434;
+    border-radius: 50%;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    transform: translateY(-50%);
 }
