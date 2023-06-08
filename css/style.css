@@ -21,6 +21,9 @@ h1,h2,h3,h4,h5,h6,p{
     margin: 0;
     padding: 0;
 }
+.heading{
+    text-align: center;
+}
 .heading h2{
     font-size: 34px;
     color: #444;
@@ -273,4 +276,31 @@ form .searchbar input{
     text-align: center;
     line-height: 40px;
     transform: translateY(-50%);
+}
+
+/* Footer part */
+#footer-part{
+    background: #343434;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+#footer-part ul li a{
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400;
+    line-height: 26px;
+    padding: 10px 0;
+}
+#footer-part h3{
+    font-size: 32px;
+    color: #fff;
+    font-weight: 600;
+    line-height: 32px;
+}
+#footer-part p{
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400;
+    line-height: 26px;
+    margin-top: 163px;
 }
