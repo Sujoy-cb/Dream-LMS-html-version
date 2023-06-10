@@ -66,15 +66,15 @@ form .searchbar input{
 }
 .navbar .cart a{
     font-size: 20px;
-    color: #222;
+    color: #111;
 }
 .navbar .loginbtn a{
     font-size: 16px;
     color: #fff;
     font-weight: 500;
     line-height: 36px;
-    background: #222;
-    border: 1px solid #222;
+    background: #111;
+    border: 1px solid #111;
     padding: 5px 25px;
 }
 .navbar .language select{
@@ -138,11 +138,11 @@ form .searchbar input{
     transition: .4s;
 }
 #course-selection .selecting-option ul .chooseItem.active{
-    background: #222;
+    background: #111;
     color: #fff;
 }
 #course-selection .selecting-option ul li:hover{
-    background: #222;
+    background: #111;
     color: #fff;
 }
 #course-selection .videos-option{
@@ -192,8 +192,8 @@ form .searchbar input{
     position: absolute;
     top: 50%;
     right: 0;
-    background: #343434;
-    border: 1px solid #343434;
+    background: #111;
+    border: 1px solid #111;
     border-radius: 50%;
     color: #fff;
     width: 40px;
@@ -233,7 +233,7 @@ form .searchbar input{
 }
 #review-part .review-slider .slider-item .image h6{
     font-size: 18px;
-    color: #343434;
+    color: #111;
     font-weight: 600;
     line-height: 26px;
     text-align: center;
@@ -249,8 +249,8 @@ form .searchbar input{
     position: absolute;
     top: 50%;
     right: -20px;
-    background: #343434;
-    border: 1px solid #343434;
+    background: #111;
+    border: 1px solid #111;
     border-radius: 50%;
     color: #fff;
     width: 40px;
@@ -399,7 +399,7 @@ form .searchbar input{
 
 /* Footer part */
 #footer-part{
-    background: #222;
+    background: #111;
     padding-top: 40px;
     padding-bottom: 20px;
 }
@@ -425,4 +425,8 @@ form .searchbar input{
     font-weight: 400;
     line-height: 26px;
     margin-top: 163px;
+}
+#footer-part .img img{
+    width: 94px;
+    height: 34px;
 }
