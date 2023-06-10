@@ -399,12 +399,15 @@ form .searchbar input{
 
 /* Footer part */
 #footer-part{
-    background: #343434;
+    background: #222;
     padding-top: 40px;
     padding-bottom: 20px;
 }
+#footer-part ul{
+    margin-left: 50px;
+}
 #footer-part ul li a{
-    font-size: 16px;
+    font-size: 14px;
     color: #fff;
     font-weight: 400;
     line-height: 26px;
@@ -417,7 +420,7 @@ form .searchbar input{
     line-height: 32px;
 }
 #footer-part p{
-    font-size: 16px;
+    font-size: 14px;
     color: #fff;
     font-weight: 400;
     line-height: 26px;
