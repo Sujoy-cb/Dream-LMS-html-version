@@ -209,6 +209,9 @@ form .searchbar input{
     padding-top: 40px;
     padding-bottom: 80px;
 }
+#review-part .heading{
+    margin-left: 50px;
+}
 #review-part .review-slider{
     position: relative;
     -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
@@ -256,6 +259,143 @@ form .searchbar input{
     line-height: 40px;
     transform: translateY(-50%);
 }
+
+/* Business part */
+#business-part{
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+#business-part .text .ub-logo{
+    width: 192px;
+    height: 32px;
+}
+#business-part .text .ub-logo img{
+    width: 100%;
+}
+#business-part .text h3{
+    font-family: 'Noto Serif KR', serif;
+    font-size: 32px;
+    color: #111;
+    font-weight: 900;
+    line-height: 1.25;
+    letter-spacing: -.05rem;
+    margin-top: 20px;
+}
+#business-part .text h3 span{
+    display: block;
+    font-family: 'Noto Serif KR', serif;
+    font-size: 32px;
+    color: #111;
+    font-weight: 900;
+    line-height: 1.25;
+    letter-spacing: -.05rem;
+}
+#business-part .text ul{
+    margin-top: 20px;
+}
+#business-part .text ul li{
+    list-style: disc;
+    font-size: 16px;
+    color: #111;
+    font-weight: 400;
+    line-height: 26px;
+    margin-left: 27px;
+    width: 368px;
+    padding: 10px 0;
+}
+#business-part .img img{
+    width: 100%;
+}
+#business-part .btns{
+    margin-top: 15px;
+}
+#business-part .btns .business-btn{
+    display: inline-block;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    line-height: 36px;
+    background: #222;
+    border: 1px solid #222;
+    padding: 5px 25px;
+    transition: .5s;
+}
+#business-part .btns .business-btn:hover{
+    background: #000;
+    border: 1px solid #000;
+}
+
+#business-part .btns .learnmore-btn{
+    display: inline-block;
+    font-size: 16px;
+    color: #222;
+    font-weight: 500;
+    line-height: 36px;
+    background:#fff;
+    border: 1px solid #222;
+    padding: 5px 25px;
+    margin-left: 10px;
+    transition: .5s;
+}
+#business-part .btns .learnmore-btn:hover{
+    background: #f5f5f5;
+    border: 1px solid #000;
+}
+/* Instructor part */
+#instructor-part{
+    padding: 60px 0;
+}
+#instructor-part .text .ub-logo{
+    width: 192px;
+    height: 32px;
+}
+#instructor-part .text .ub-logo img{
+    width: 100%;
+}
+#instructor-part .text{
+    margin-top: 100px;
+    margin-left: 50px;
+}
+#instructor-part .text h3{
+    font-family: 'Noto Serif KR', serif;
+    font-size: 32px;
+    color: #111;
+    font-weight: 900;
+    line-height: 1.25;
+    letter-spacing: -.05rem;
+    margin-top: 20px;
+}
+
+#instructor-part .text p{
+    font-size: 16px;
+    color: #111;
+    font-weight: 400;
+    line-height: 26px;
+    width: 382px;
+    margin-top: 15px;
+}
+#instructor-part .img img{
+    width: 100%;
+}
+#instructor-part .btns{
+    margin-top: 15px;
+}
+#instructor-part .btns .business-btn{
+    display: inline-block;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    line-height: 36px;
+    background: #222;
+    border: 1px solid #222;
+    padding: 5px 25px;
+    transition: .5s;
+}
+#instructor-part .btns .business-btn:hover{
+    background: #000;
+    border: 1px solid #000;
+}
+
 
 /* Footer part */
 #footer-part{
