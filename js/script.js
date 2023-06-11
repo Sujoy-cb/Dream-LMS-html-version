@@ -4,6 +4,12 @@ let dropdown = document.querySelector('.drop')
 function dropMenu(){
   dropdown.classList.toggle('dropdown')
 }
+// Drop down menu//
+let language = document.querySelector('.changeLanguage')
+
+function languageChange(){
+  language.classList.toggle('languagechange')
+}
 // active class//
 $(".chooseItem").click(function () {
   $(".chooseItem").removeClass("active");

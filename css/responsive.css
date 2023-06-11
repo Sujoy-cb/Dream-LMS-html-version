@@ -1,0 +1,26 @@
+
+/* Small devices*/
+@media (max-width: 375px) { 
+    .navbar-toggler{
+        width: 40px;
+        height: 40px;
+    }
+    .navbar-toggler-icon{
+        width: 20px;
+        height: 20px;
+        background-image: none;
+    }
+
+ }
+
+/* Medium devices*/
+@media (min-width: 768px) {  }
+
+/* Large devices*/
+@media (min-width: 992px) {  }
+
+/* X-Large devices*/ 
+@media (min-width: 1200px) {  }
+
+/* XX-Large devices*/
+@media (min-width: 1400px) {  }
