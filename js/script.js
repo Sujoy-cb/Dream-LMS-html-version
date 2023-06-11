@@ -1,3 +1,9 @@
+// Drop down menu//
+let dropdown = document.querySelector('.drop')
+
+function dropMenu(){
+  dropdown.classList.toggle('dropdown')
+}
 // active class//
 $(".chooseItem").click(function () {
   $(".chooseItem").removeClass("active");
