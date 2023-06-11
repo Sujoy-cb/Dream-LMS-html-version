@@ -1,14 +1,64 @@
 
 /* Small devices*/
-@media (max-width: 375px) { 
-    .navbar-toggler{
+@media (min-width: 320px) and (max-width:575px) {
+    .offcanvas-body{
+        height: 70vh !important;
+    }
+    .navbar{
+        padding: 10px 0 !important;
+    }
+    .res-menu{
+        display: block;
+    }
+    .res-nav{
+        background: transparent;
+        color: #000;
+        border: 1px solid #000;
+        border-radius: 3px;
         width: 40px;
         height: 40px;
+        text-align: center;
+        line-height: 40px;
+        font-size: 25px;
     }
-    .navbar-toggler-icon{
-        width: 20px;
-        height: 20px;
-        background-image: none;
+    .btn-close{
+        margin-left: auto;
+    }
+    .searchbar,.cart, .loginbtn{
+        display: none;
+    }
+    .navbar .language{
+        display: none;
+    }
+    .res-innerNav{
+        border-bottom: 1px solid #444;
+        padding: 10px 0;
+    }
+    .res-innerNav h5{
+        border-bottom: 1px solid #444;
+        padding: 10px 0;
+    }
+    .res-navItem li a{
+        padding: 10px;
+    }
+    .res-loginbtn a{
+        font-size: 16px;
+        color: #fff !important;
+        font-weight: 500;
+        line-height: 36px;
+        background: #111;
+        border: 1px solid #111;
+        padding: 5px 25px !important;
+    }
+    .res-changeLanguage{
+        border-bottom: 1px solid #444;
+        padding: 10px 0;
+        cursor: pointer;
+    }
+    .res-changeLanguage h5{
+        border-bottom: 1px solid #444;
+        padding: 10px 0;
+        cursor: pointer;
     }
 
  }

@@ -29,6 +29,9 @@ h1,h2,h3,h4,h5,h6,p{
     font-weight: 700;
     line-height: 1.25rem;
 }
+.res-menu{
+    display: none;
+}
 
 /* Navbar Css */
 .navbar{
@@ -44,7 +47,7 @@ h1,h2,h3,h4,h5,h6,p{
     font-weight: 400;
 }
 .navbar ul li ul{
-    width: 210px;
+    width: 230px;
     position: absolute;
     top: 70px;
     left: 0;
