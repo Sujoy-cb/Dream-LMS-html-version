@@ -1,6 +1,10 @@
 
 /* Small devices*/
-@media (min-width: 320px) and (max-width:575px) {
+@media (max-width:575px) {
+    .heading h2{
+        font-size: 23px;
+        line-height: 30px;
+    }
     /* Navbar responsive */
     .offcanvas-body{
         height: 70vh !important;
@@ -69,7 +73,7 @@
 
     /* Course selection start */
     #course-selection{
-        padding: 80px 20px;
+        padding: 40px 20px;
     }
     #course-selection .heading h2{
         font-size: 23px;
@@ -80,6 +84,40 @@
     }
     #course-selection .videos-option{
         margin-top: 30px;
+    }
+    #course-selection .videos-option .video-slider .slider-item{
+        margin-right: 0;
+    }
+    #course-selection .videos-option .video-slider .next{
+        right: -20px;
+    }
+
+    /* Review part responsive */
+    #review-part .heading{
+        margin-left: 0;
+        text-align: center;
+    }
+    #review-part .review-slider .slider-item{
+        position: relative;
+        height: 530px;
+        padding: 20px;
+    }
+    #review-part .review-slider .slider-item .review-text{
+        width: 100%;
+    }
+    #review-part .review-slider .slider-item .image{
+        width: 120px;
+        height: 120px;
+        position: absolute;
+        bottom: 85px;
+        left: 80px;
+    }
+    #course-selection .videos-option .video-slider .slider-item .img img{
+        width: 100%;
+    }
+    #review-part .review-slider .next{
+        top: 40%;
+        right: -10px;
     }
 
  }

@@ -42,7 +42,7 @@ $('.video-slider').slick({
 $('.review-slider').slick({
     dots: false,
     infinite: true,
-    autoplay: true,
+    autoplay: false,
     prevArrow: false,
     nextArrow: '<span class="next"><i class="fa-solid fa-angle-right"></i></span>',
     speed: 300,
