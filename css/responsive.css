@@ -1,6 +1,7 @@
 
 /* Small devices*/
 @media (min-width: 320px) and (max-width:575px) {
+    /* Navbar responsive */
     .offcanvas-body{
         height: 70vh !important;
     }
@@ -59,6 +60,26 @@
         border-bottom: 1px solid #444;
         padding: 10px 0;
         cursor: pointer;
+    }
+
+    /* Banner part responsive */
+    #banner .banner-text{
+        display: none;
+    }
+
+    /* Course selection start */
+    #course-selection{
+        padding: 80px 20px;
+    }
+    #course-selection .heading h2{
+        font-size: 23px;
+        line-height: 30px;
+    }
+    #course-selection p{
+        line-height: 23px;
+    }
+    #course-selection .videos-option{
+        margin-top: 30px;
     }
 
  }

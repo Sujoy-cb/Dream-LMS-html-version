@@ -26,6 +26,17 @@ $('.video-slider').slick({
     speed: 300,
     slidesToShow: 3,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false
+        }
+      },
+    ]
   });
 // Review Slider script//
 $('.review-slider').slick({
@@ -37,4 +48,5 @@ $('.review-slider').slick({
     speed: 300,
     slidesToShow: 1,
     slidesToScroll: 1,
+    
   });
