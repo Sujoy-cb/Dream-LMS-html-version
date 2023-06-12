@@ -25,7 +25,7 @@ h1,h2,h3,h4,h5,h6,p{
 .heading h2{
     font-family: 'Noto Serif KR', serif;
     font-size: 40px;
-    color: #222;
+    color: #111;
     font-weight: 700;
     line-height: 1.25rem;
 }
