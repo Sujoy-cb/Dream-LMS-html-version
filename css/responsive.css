@@ -287,6 +287,27 @@
     #business-part .img{
         margin-top: 40px;
     }
+    /* Instructor responsive */
+    #instructor-part .img img{
+        margin-left: -30px;
+    }
+    #instructor-part .text{
+        margin-top: 50px;
+        margin-left: 0;
+    }
+    #instructor-part .btns .business-btn{
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Footer responsive */
+    #footer-part .img{
+        display: inline-block;
+    }
+    #footer-part p{
+        width: 100%;
+        margin-top: 10px;
+    }
  }
 
 /* Large devices*/
