@@ -1,6 +1,6 @@
 
 /* Small devices*/
-@media (max-width:575px) {
+@media (max-width:575.98px) {
     .heading h2{
         font-size: 27px;
         line-height: 30px;
@@ -169,7 +169,7 @@
  }
 
 /* Medium devices*/
-@media (min-width: 576px) and (max-width: 767px) { 
+@media (min-width: 576px) and (max-width: 767.98px) { 
     /* Navbar responsive */
     .offcanvas-body{
         height: 70vh !important;
@@ -237,7 +237,7 @@
     /* Banner responsive */
 
     #banner .banner-text{
-        margin-left:10px;
+        margin-right:190px;
     }
 
     /* Course selection start */
@@ -311,10 +311,160 @@
  }
 
 /* Large devices*/
-@media (min-width: 992px) {  }
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    /* Navbar responsive */
+    .offcanvas-body{
+        height: 70vh !important;
+    }
+    .navbar{
+        padding: 10px 0 !important;
+    }
+    .navbar-brand{
+        margin-left: 15px;
+    }
+    .res-menu{
+        display: block;
+    }
+    .res-nav{
+        background: transparent;
+        color: #000;
+        border: 1px solid #000;
+        border-radius: 3px;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        font-size: 25px;
+    }
+    .btn-close{
+        margin-left: auto;
+    }
+    .searchbar,.cart, .loginbtn{
+        display: none;
+    }
+    .navbar .language{
+        display: none;
+    }
+    .res-innerNav{
+        border-bottom: 1px solid #444;
+        padding: 10px 0;
+    }
+    .res-innerNav h5{
+        border-bottom: 1px solid #444;
+        padding: 10px 0;
+    }
+    .res-navItem li a{
+        padding: 10px;
+    }
+    .res-loginbtn a{
+        font-size: 16px;
+        color: #fff !important;
+        font-weight: 500;
+        line-height: 36px;
+        background: #111;
+        border: 1px solid #111;
+        padding: 5px 25px !important;
+    }
+    .res-changeLanguage{
+        border-bottom: 1px solid #444;
+        padding: 10px 0;
+        cursor: pointer;
+    }
+    .res-changeLanguage h5{
+        border-bottom: 1px solid #444;
+        padding: 10px 0;
+        cursor: pointer;
+    }
+
+    /* Banner responsive */
+
+    #banner .banner-text{
+        margin-right: 200px;
+    }
+
+    /* Course selection start */
+    #course-selection{
+        padding: 40px 20px;
+    }
+    #course-selection .heading h2{
+        font-size: 40px;
+        line-height: 34px;
+    }
+    #course-selection p{
+        line-height: 23px;
+    }
+    #course-selection .selecting-option ul li{
+        padding: 13px 30px;
+    }
+    #course-selection .videos-option .video-slider .slider-item{
+        margin-right: 0;
+    }
+    #course-selection .videos-option .video-slider .next{
+        right: -20px;
+    }
+
+    /* Review part responsive */
+    #review-part .review-slider .next{
+        top: 40%;
+        right: -10px;
+    }
+    #review-part p{
+        text-align: justify;
+    }
+
+    /* Business responsive */
+    #business-part .text ul li{
+        width: 90%;
+    }
+    #business-part .btns .business-btn{
+        width: 100%;
+        text-align: center;
+    }
+    #business-part .btns .learnmore-btn{
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+        margin-left: 0;
+    }
+    #business-part .img{
+        margin-top: 40px;
+    }
+    /* Instructor responsive */
+    #instructor-part .img img{
+        margin-left: -30px;
+    }
+    #instructor-part .text{
+        margin-top: 50px;
+        margin-left: 0;
+    }
+    #instructor-part .btns .business-btn{
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Footer responsive */
+    #footer-part .img{
+        display: inline-block;
+    }
+    #footer-part p{
+        width: 100%;
+    }
+    #footer-part ul{
+        margin-left: 0;
+    }
+ }
 
 /* X-Large devices*/ 
-@media (min-width: 1200px) {  }
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    /* Responsive Navbar */
+    form .searchbar{
+        width: 330px;
+    }
+    /* Responsive Banner */
+    #banner .banner-text{
+        width: 500px;
+    }
+ }
 
 /* XX-Large devices*/
 @media (min-width: 1400px) {  }
