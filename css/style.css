@@ -57,6 +57,7 @@ h1,h2,h3,h4,h5,h6,p{
     border: 1px solid #d6d6d6;
     padding: 15px;
     opacity: 0;
+    visibility: hidden;
     z-index: 1;
 }
 .navbar ul li ul li{
@@ -68,7 +69,7 @@ h1,h2,h3,h4,h5,h6,p{
 .navbar ul li ul li a:hover{
     color: #ff0000 !important;
 }
-.navbar ul li .drop.dropdown{
+.navbar ul .dropdown ul{
     opacity: 1;
     visibility: visible;
 }

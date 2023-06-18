@@ -10,6 +10,7 @@
 #login .login-part .google-btn{
     width: 80%;
     border: 1px solid #444;
+    border-radius: 2px;
     padding: 8px 15px;
     margin-top: 15px;
 }
@@ -32,6 +33,7 @@
 }
 #login .login-part form input{
     width: 80%;
+    border: 1px solid #444;
     padding: 10px;
     margin-top: 15px;
 }

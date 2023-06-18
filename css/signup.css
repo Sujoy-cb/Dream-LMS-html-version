@@ -17,6 +17,7 @@
 }
 #sign-up .signup-part form input{
     width: 80%;
+    border: 1px solid #444;
     padding: 10px;
     margin-top: 15px;
 }
@@ -66,4 +67,7 @@
     line-height: 24px;
     text-align: center;
     border: none;
+}
+#sign-up .signup-part .login-text a{
+    color: #5624d0;
 }
