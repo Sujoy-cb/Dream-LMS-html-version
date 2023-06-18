@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Udemy-HTML version</title>
+    <!-- Favicon -->
+    <link rel="icon" type="images/favicon" sizes="80x80" href="assets/images/favicon.png">
+    <!-- Css links -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/signup.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <!-- Navbar start -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="assets/images/logo-udemy.png" alt="logo">
+          </a>
+          <!-- **** -->
+            <div class="res-menu">
+              <a class="res-nav" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                <i class="fa-solid fa-bars"></i>
+              </a> 
+              <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                  <span class="res-loginbtn">
+                    <a href="#">Log in</a>
+                  </span>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <div class="res-innerNav">
+                    <h5>Menu</h5>
+                    <ul class="res-navItem">
+                      <li><a href="#">Python</a></li>
+                      <li><a href="#"> Excel</a></li>
+                      <li><a href="#"> Web development</a></li>
+                      <li><a href="#"> JavaScript</a></li>
+                      <li><a href="#"> Data science</a></li>
+                      <li><a href="#"> Amazon AWS</a></li>
+                      <li><a href="#"> Graphic design</a></li>
+                      <li><a href="#"> Market places</a></li>
+                    </ul>
+                  </div>
+                  <div class="res-changeLanguage">
+                    <h5>Select language</h5>
+                    <div class="d-flex">
+                      <span class="p-3">English</span>
+                      <span class="p-3">Bengali</span>
+                    </div>
+                    <div class="d-flex">
+                      <span class="p-3">Hindi</span>
+                      <span class="p-3 ms-3">Spanish</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <!-- **** -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item" onclick="dropMenu()">
+                <a class="nav-link active" aria-current="page" href="#">Categories</a>
+                  <ul class="drop">
+                    <li><a href="#">Python</a></li>
+                    <li><a href="#"> Excel</a></li>
+                    <li><a href="#"> Web development</a></li>
+                    <li><a href="#"> JavaScript</a></li>
+                    <li><a href="#"> Data science</a></li>
+                    <li><a href="#"> Amazon AWS</a></li>
+                    <li><a href="#"> Graphic design</a></li>
+                    <li><a href="#"> Market places</a></li>
+                  </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Teach on Udemy</a>
+              </li>
+            </ul>
+            <form class="me-auto" action="#">
+                <div class="searchbar">
+                    <button type="submit" class="srch-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <input type="text" placeholder="Search for anything">
+                </div>
+            </form>
+          </div>
+          <span class="cart">
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+          </span>
+          <span class="loginbtn">
+            <a href="#">Log in</a>
+          </span>
+          <span class="language" onclick="languageChange()">
+            <i class="fa-solid fa-globe"></i>
+            <div class="changeLanguage">
+              <div class="d-flex">
+                <span class="p-3">English</span>
+                <span class="p-3">Bengali</span>
+              </div>
+              <div class="d-flex">
+                <span class="p-3">Hindi</span>
+                <span class="p-3 ms-3">Spanish</span>
+              </div>
+            </div>
+          </span>
+        </div>
+      </nav>
+    <!-- Navbar end -->
+
+    <!-- Signup body start -->
+    <section id="sign-up">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xl-3"></div>
+          <div class="col-xl-6">
+            <div class="signup-part">
+              <h4>Sign up and start learning</h4>
+              <form>
+                <input type="text" placeholder="Fullname">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <div class="checkbox">
+                  <input type="checkbox">
+                  <label>Send me special offers, personalized recommendations, and learning tips.</label>
+                </div>
+                  <button>Sign up</button>
+              </form>
+              <p>By signing up, you agree to our Terms of Use & Privacy policy.</p>
+              <p class="login-text">Already have an account? <a href="#">Login</a></p>
+            </div>
+          </div>
+          <div class="col-xl-3"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Signup body end -->
+
+    <!-- Footer part start -->
+    <footer id="footer-part">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-3 col-md-3">
+            <ul>
+              <li><a href="#">Udemy Business </a></li>
+              <li><a href="#">Teach on Udemy </a></li>
+              <li><a href="#">Get the app </a></li>
+              <li><a href="#">About us </a></li>
+              <li><a href="#">Contact us </a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-3">
+            <ul>
+              <li><a href="#"> Careers </a></li>
+              <li><a href="#"> Our Blog </a></li>
+              <li><a href="#"> Help & Support </a></li>
+              <li><a href="#"> Affiliate </a></li>
+              <li><a href="#"> Investors </a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-3">
+            <ul>
+              <li><a href="#"> Terms & Conditions</a></li>
+              <li><a href="#"> Privacy policy</a></li>
+              <li><a href="#"> Cookie settings</a></li>
+              <li><a href="#"> Sitemap</a></li>
+              <li><a href="#"> Accessibility statement</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-3">
+            <div class="img">
+              <img src="./assets/images/footer-logo.png" alt="footer-logo">
+            </div>
+            <p>&#169 2023 Copyright</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer part end -->
+
+
+
+    <!-- Js links -->
+    <script src="js/code.jquery.com_jquery-1.12.4.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

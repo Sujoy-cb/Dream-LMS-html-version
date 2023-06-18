@@ -1,0 +1,69 @@
+/* Signup part */
+#sign-up{
+    background: #fff;
+    padding: 80px 0;
+}
+#sign-up .signup-part{
+    padding: 30px;
+}
+#sign-up .signup-part h5{
+    font-size: 20px;
+    color: #000;
+    font-weight: 500;
+    line-height: 24px;
+}
+#sign-up .signup-part form{
+    margin-top: 15px;
+}
+#sign-up .signup-part form input{
+    width: 80%;
+    padding: 10px;
+    margin-top: 15px;
+}
+#sign-up .signup-part form input::placeholder{
+    color: #000;
+}
+#sign-up .signup-part form .checkbox{
+    display: flex;
+    margin-top: 15px;
+}
+#sign-up .signup-part form .checkbox input{
+    width: 15px;
+    height: 15px;
+    margin-top: 4px;
+}
+#sign-up .signup-part form .checkbox label{
+    width: 484px;
+    margin-left: 10px;
+}
+#sign-up .signup-part form button{
+    width: 80%;
+    background: #a435f0;
+    border: 1px solid #a435f0;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    line-height: 26px;
+    padding: 10px;
+    margin-top: 20px;
+
+}
+#sign-up .signup-part p{
+    display: inline-block;
+    font-size: 15px;
+    color: #000;
+    font-weight: 400;
+    line-height: 24px;
+    border-bottom: 1px solid #eaeaea;
+    padding: 15px 0;
+}
+#sign-up .signup-part .login-text{
+    display: block;
+    width: 80%;
+    font-size: 16px;
+    color: #000;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+    border: none;
+}
