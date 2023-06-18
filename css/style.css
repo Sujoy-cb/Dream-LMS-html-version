@@ -47,6 +47,7 @@ h1,h2,h3,h4,h5,h6,p{
     color: #222 !important;
     font-weight: 400;
 }
+
 .navbar ul li ul{
     width: 230px;
     position: absolute;
@@ -61,10 +62,17 @@ h1,h2,h3,h4,h5,h6,p{
 .navbar ul li ul li{
     padding: 8px 20px;
 }
+.navbar ul li ul li a{
+    color: #222;
+}
+.navbar ul li ul li a:hover{
+    color: #ff0000 !important;
+}
 .navbar ul li .drop.dropdown{
     opacity: 1;
     visibility: visible;
 }
+
 form .searchbar{
     width: 590px;
     margin-left: 20px;
@@ -122,6 +130,9 @@ form .searchbar input{
     padding: 10px;
     border: 1px solid #dbdbdb;
     display: none;
+}
+.navbar .language .changeLanguage span:hover{
+    color: #ff0000;
 }
 .navbar .language .changeLanguage.languagechange{
     display: block;
