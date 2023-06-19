@@ -1,0 +1,32 @@
+/* Teach on Udemy CSS */
+#teachonudemy{
+    background: url(../assets/images/teach-banner.jpg) no-repeat center;
+    background-size: cover;
+    padding: 100px 0;
+}
+#teachonudemy .text h2{
+    font-family: 'Noto Serif KR', serif;
+    font-size: 38px;
+    color: #000;
+    font-weight: 900;
+    line-height: 48px;
+    width: 90%;
+}
+#teachonudemy .text p{
+    font-size: 16px;
+    color: #000;
+    font-weight: 400;
+    line-height: 26px;
+    width: 90%;
+    margin-top: 15px;
+}
+#teachonudemy .text .button a{
+    display: inline-block;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    line-height: 26px;
+    background: #000;
+    padding: 10px 91px;
+    margin-top: 20px;
+}
