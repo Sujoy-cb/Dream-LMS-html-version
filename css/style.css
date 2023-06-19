@@ -98,6 +98,8 @@ form .searchbar input{
 .navbar span{
     padding: 20px;
 }
+.navbar .heart a,
+.navbar .bell a,
 .navbar .cart a{
     font-size: 20px;
     color: #111;
