@@ -96,7 +96,7 @@ form .searchbar input{
     outline: 0;
 }
 .navbar span{
-    padding: 20px;
+    padding: 20px 12px;
 }
 .navbar .heart a,
 .navbar .bell a,

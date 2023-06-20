@@ -85,3 +85,5 @@ $(".counter2").countMe(40,65);
 $(".counter3").countMe(40,10);
 $(".counter4").countMe(40,65);
 $(".counter5").countMe(40,1);
+
+

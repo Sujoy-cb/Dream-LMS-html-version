@@ -45,3 +45,72 @@
     line-height: 24px;
     margin-top: 10px;
 }
+
+/* What to learn CSS */
+#whatto-learn{
+    background: #fff;
+    padding: 40px 0 20px 0;
+}
+#whatto-learn .heading h3{
+    font-family: 'Noto Serif KR', serif;
+    font-size: 30px;
+    color: #000;
+    font-weight: 800;
+}
+#whatto-learn .learn-slider{
+    margin-top: 30px;
+}
+#whatto-learn .learn-slider .slider-item{
+    background: #fff;
+    margin-right: 20px;
+}
+
+#whatto-learn .learn-slider .slider-item .img img{
+    width: 100%;
+}
+#whatto-learn .learn-slider .slider-item .details{
+    height: 50%;
+    padding: 20px;
+}
+#whatto-learn .learn-slider .slider-item .details h5{
+    font-size: 18px;
+    color: #343434;
+    font-weight: 600;
+    line-height: 24px;
+}
+#whatto-learn .learn-slider .slider-item .details p{
+    font-size: 16px;
+    color: #444;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 10px;
+}
+#whatto-learn .learn-slider .slider-item .details .rating .point{
+    display: inline-block;
+    font-size: 16px;
+    color: #343434;
+    font-weight: 500;
+}
+#whatto-learn .learn-slider .slider-item .details .stars{
+    color: #FFB84C;
+}
+#whatto-learn .learn-slider .slider-item .details .price h6{
+    font-size: 20px;
+    color: #343434;
+    font-weight: 700;
+    margin-top: 10px;
+}
+#whatto-learn .learn-slider .next{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    background: #111;
+    border: 1px solid #111;
+    border-radius: 50%;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    transform: translateY(-50%);
+}
