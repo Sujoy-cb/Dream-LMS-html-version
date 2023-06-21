@@ -1,3 +1,11 @@
+// Profile show dropdown//
+let prodrop = document.querySelector('.profile')
+
+function profileShow(){
+  prodrop.classList.toggle('profileShow')
+}
+
+
 // What to learn slider //
 $('.learn-slider').slick({
     dots: false,
@@ -9,3 +17,4 @@ $('.learn-slider').slick({
     slidesToShow: 5,
     slidesToScroll: 1,  
   });
+
