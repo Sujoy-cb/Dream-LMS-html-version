@@ -73,13 +73,14 @@ h1,h2,h3,h4,h5,h6,p{
     opacity: 1;
     visibility: visible;
 }
-
-form .searchbar{
-    width: 590px;
+.nav-srch{
+    width: 70%;
+}
+.nav-srch .searchbar{
     margin-left: 20px;
     position: relative;
 }
-form .searchbar .srch-icon{
+.nav-srch .searchbar .srch-icon{
     position: absolute;
     top: 7px;
     left: 20px;
@@ -88,7 +89,7 @@ form .searchbar .srch-icon{
     background: transparent;
     border: none;
 }
-form .searchbar input{
+.nav-srch .searchbar input{
     width: 100%;
     border: 1px solid #444;
     border-radius: 25px;

@@ -81,9 +81,9 @@ $('.review-slider').slick({
 
   // $(selector).countMe(delay,speed)
 $(".counter").countMe(40,65);
-$(".counter2").countMe(40,65);
+$(".counter2").countMe(40,35);
 $(".counter3").countMe(40,10);
-$(".counter4").countMe(40,65);
+$(".counter4").countMe(40,20);
 $(".counter5").countMe(40,1);
 
 
