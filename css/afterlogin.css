@@ -27,7 +27,6 @@
     right: 0;
     background: #fff;
     border: 1px solid #e6e6e6;
-    padding: 20px;
     display: none;
     visibility: hidden;
     z-index: 1;
@@ -41,7 +40,7 @@
     justify-content: space-between;
     align-items: center;
     border: 1px solid #e6e6e6;
-    padding: 8px;
+    padding: 15px;
 }
 
 .navbar .profile .pro-drop .pro-details .name-email{
@@ -61,7 +60,11 @@
 .navbar .profile .pro-drop ul{
     width: 100%;
     border: 1px solid #e6e6e6;
+    padding: 10px;
 }
+/* .navbar .profile .pro-drop ul>li{
+    border: 1px solid #e6e6e6;
+} */
 .navbar .profile .pro-drop ul>li>a{
     display: inline-block;
     font-size: 16px;
