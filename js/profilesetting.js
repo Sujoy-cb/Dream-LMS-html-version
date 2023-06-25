@@ -1,3 +1,4 @@
+// Profile setting js//
 let abc = document.querySelector(".abc")
 let profilepicture = document.querySelector(".profilepicture")
 let privacysetting = document.querySelector(".privacysetting")
