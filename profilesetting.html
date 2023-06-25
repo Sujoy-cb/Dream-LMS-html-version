@@ -1,190 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Udemy Profile Setting-HTML version</title>
     <!-- Favicon -->
-    <link rel="icon" type="images/favicon" sizes="80x80" href="assets/images/favicon.png">
+    <link
+      rel="icon"
+      type="images/favicon"
+      sizes="80x80"
+      href="assets/images/favicon.png"
+    />
     <!-- Css links -->
-    <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/afterlogin.css">
-    <link rel="stylesheet" href="css/profilesetting.css">
-    <link rel="stylesheet" href="css/responsive.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/afterlogin.css" />
+    <link rel="stylesheet" href="css/profilesetting.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
     <!-- Side navbar start -->
     <section id="profilesettins">
-        <div class="container-full">
-            <div class="profile-part">
-                <div class="profile-nav">
-                    <a class="navbar-brand" href="index.html">
-                        <div class="img">
-                            <img src="assets/images/favicon.png" alt="profilesetting-logo">
-                        </div>
-                    </a>
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <i class="fa-brands fa-youtube"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fa-regular fa-envelope"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fa-solid fa-chart-column"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fa-solid fa-wrench"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fa-regular fa-circle-question"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="settingoptions">
-                    <!-- Navbar start -->
-                        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                            <div class="container-fluid">
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                
-                                <ul class="afterlogin-nav profile-setting">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Student</a>
-                                </li>
-                                </ul>
-                            </div>
-                            <span class="bell">
-                                <a href="#"><i class="fa-regular fa-bell"></i></a>
-                            </span>
-                            <div class="profile" onclick="profileShow()">
-                                <img src="./assets/images/profile-img.png" alt="profile-img">
-                                <!-- <h5>SC</h5> -->
-                                <div class="pro-drop">
-                                <div class="pro-details">
-                                    <div class="pro-img">
-                                    <img src="./assets/images/profile-img.png" alt="profile-img">
-                                    </div>
-                                    <div class="name-email">
-                                    <h6 class="user-name">SujoyC</h6>
-                                    <p class="email">sujoy.mdev@gmail.com</p>
-                                    </div>
-                                </div>
-                                <div class="profile-list">
-                                    <ul>
-                                    <li><a href="#">My learning</a></li>
-                                    <li><a href="#">My cart</a></li>
-                                    <li><a href="#">Whishlist</a></li>
-                                    <li><a href="#">Instructor dashboard</a></li>
-                                    </ul>
-                                    <ul>
-                                    <li><a href="#">Notifications</a></li>
-                                    <li><a href="#">Messages</a></li>
-                                    </ul>
-                                    <ul>
-                                    <li><a href="#">Account settings</a></li>
-                                    <li><a href="#">Payment methods</a></li>
-                                    <li><a href="#">Subscriptions</a></li>
-                                    <li><a href="#">Udemy credits</a></li>
-                                    <li><a href="#">Purchase history</a></li>
-                                    </ul>
-                                    <ul>
-                                    <li><a href="#">Public profile</a></li>
-                                    <li><a href="profilesetting.html">Edit profile</a></li>
-                                    </ul>
-                                    <ul>
-                                    <li><a href="#">Help</a></li>
-                                    <li><a href="#">Log out</a></li>
-                                    </ul>
-                                </div>
-                                </div>
-                            </div>
-                            </div>
-                        </nav>
-                    <!-- Navbar end -->
-                    <!-- Settings Part -->
-                    <div class="container">
-                        <div class="heading">
-                            <h3>Profile & settings</h3>
-                        </div>
-                        <div class="tab-item">
-                            <ul>
-                                <li class="tabs active">Udemy profile</li>
-                                <li class="tabs">Profile picture</li>
-                                <li class="tabs">Privacy setting</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Side navbar end -->
-    
-
-    <!-- Footer part start -->
-    <footer id="footer-part">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-lg-3 col-md-3">
-              <ul>
-                <li><a href="#">Udemy Business </a></li>
-                <li><a href="#">Teach on Udemy </a></li>
-                <li><a href="#">Get the app </a></li>
-                <li><a href="#">About us </a></li>
-                <li><a href="#">Contact us </a></li>
-              </ul>
-            </div>
-            <div class="col-lg-3 col-md-3">
-              <ul>
-                <li><a href="#"> Careers </a></li>
-                <li><a href="#"> Our Blog </a></li>
-                <li><a href="#"> Help & Support </a></li>
-                <li><a href="#"> Affiliate </a></li>
-                <li><a href="#"> Investors </a></li>
-              </ul>
-            </div>
-            <div class="col-lg-3 col-md-3">
-              <ul>
-                <li><a href="#"> Terms & Conditions</a></li>
-                <li><a href="#"> Privacy policy</a></li>
-                <li><a href="#"> Cookie settings</a></li>
-                <li><a href="#"> Sitemap</a></li>
-                <li><a href="#"> Accessibility statement</a></li>
-              </ul>
-            </div>
-            <div class="col-lg-3 col-md-3">
+      <div class="container-full">
+        <div class="profile-part">
+          <div class="profile-nav">
+            <a class="navbar-brand" href="index.html">
               <div class="img">
-                <img src="./assets/images/footer-logo.png" alt="footer-logo">
+                <img
+                  src="assets/images/favicon.png"
+                  alt="profilesetting-logo"
+                />
               </div>
-              <p>&#169 2023 Copyright</p>
+            </a>
+            <ul>
+              <li>
+                <a href="#">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-regular fa-envelope"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-chart-column"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-wrench"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-regular fa-circle-question"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="settingoptions">
+            <!-- Navbar start -->
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+              <div class="container-fluid">
+                <div
+                  class="collapse navbar-collapse"
+                  id="navbarSupportedContent"
+                >
+                  <ul class="afterlogin-nav profile-setting">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#"
+                        >Student</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <span class="bell">
+                  <a href="#"><i class="fa-regular fa-bell"></i></a>
+                </span>
+                <div class="profile" onclick="profileShow()">
+                  <img
+                    src="./assets/images/profile-img.png"
+                    alt="profile-img"
+                  />
+                  <!-- <h5>SC</h5> -->
+                  <div class="pro-drop">
+                    <div class="pro-details">
+                      <div class="pro-img">
+                        <img
+                          src="./assets/images/profile-img.png"
+                          alt="profile-img"
+                        />
+                      </div>
+                      <div class="name-email">
+                        <h6 class="user-name">SujoyC</h6>
+                        <p class="email">sujoy.mdev@gmail.com</p>
+                      </div>
+                    </div>
+                    <div class="profile-list">
+                      <ul>
+                        <li><a href="#">My learning</a></li>
+                        <li><a href="#">My cart</a></li>
+                        <li><a href="#">Whishlist</a></li>
+                        <li><a href="#">Instructor dashboard</a></li>
+                      </ul>
+                      <ul>
+                        <li><a href="#">Notifications</a></li>
+                        <li><a href="#">Messages</a></li>
+                      </ul>
+                      <ul>
+                        <li><a href="#">Account settings</a></li>
+                        <li><a href="#">Payment methods</a></li>
+                        <li><a href="#">Subscriptions</a></li>
+                        <li><a href="#">Udemy credits</a></li>
+                        <li><a href="#">Purchase history</a></li>
+                      </ul>
+                      <ul>
+                        <li><a href="#">Public profile</a></li>
+                        <li><a href="profilesetting.html">Edit profile</a></li>
+                      </ul>
+                      <ul>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Log out</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </nav>
+            <!-- Navbar end -->
+            <!-- Settings Part -->
+            <div class="container">
+              <div class="heading">
+                <h3>Profile & settings</h3>
+              </div>
+              <div class="tab-item">
+                <ul class="my-list">
+                  <li class="tabs up active" onclick="udemyProf()">Udemy profile</li>
+                  <li class="tabs pp" onclick="profic()">Profile picture</li>
+                  <li class="tabs ps" onclick="privSetting()">
+                    Privacy setting
+                  </li>
+                </ul>
+
+                <div class="a setting abc"></div>
+                <div class="b setting"></div>
+                <div class="c setting"></div>
+              </div>
             </div>
           </div>
         </div>
-      </footer>
-      <!-- Footer part end -->
-  
-  
-  
+      </div>
+    </section>
+    <!-- Side navbar end -->
+
+    <!-- Footer part start -->
+    <footer id="footer-part">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-3 col-md-3">
+            <ul>
+              <li><a href="#">Udemy Business </a></li>
+              <li><a href="#">Teach on Udemy </a></li>
+              <li><a href="#">Get the app </a></li>
+              <li><a href="#">About us </a></li>
+              <li><a href="#">Contact us </a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-3">
+            <ul>
+              <li><a href="#"> Careers </a></li>
+              <li><a href="#"> Our Blog </a></li>
+              <li><a href="#"> Help & Support </a></li>
+              <li><a href="#"> Affiliate </a></li>
+              <li><a href="#"> Investors </a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-3">
+            <ul>
+              <li><a href="#"> Terms & Conditions</a></li>
+              <li><a href="#"> Privacy policy</a></li>
+              <li><a href="#"> Cookie settings</a></li>
+              <li><a href="#"> Sitemap</a></li>
+              <li><a href="#"> Accessibility statement</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-3">
+            <div class="img">
+              <img src="./assets/images/footer-logo.png" alt="footer-logo" />
+            </div>
+            <!-- <p>&#169 2023 Copyright</p> -->
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer part end -->
+
     <!-- Js links -->
+    <script src="js/profilesetting.js"></script>
     <script src="js/code.jquery.com_jquery-1.12.4.min.js"></script>
     <script src="js/all.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/afterlogin.js"></script>
-    <script src="js/profilesetting.js"></script>
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>
