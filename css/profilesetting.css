@@ -61,11 +61,13 @@
   font-weight: 600;
   cursor: pointer;
 }
-.settingoptions .tab-item .a{
+.settingoptions .tab-item .a,
+.settingoptions .tab-item .b{
   display: none;
   visibility: hidden;
 }
-.settingoptions .tab-item .a.abc{
+.settingoptions .tab-item .a.abc,
+.settingoptions .tab-item .b.abc{
   padding-top: 30px;
   padding-bottom: 80px;
   display: block;
@@ -164,9 +166,80 @@
   border: 1px solid #000;
   outline: 0;
 }
-.settingoptions .tab-item .b.abc {
-  background: green;
-  height: 400px;
+.settingoptions .tab-item .b.abc .img-up{
+  padding-top: 30px;
+  padding-bottom: 80px;
+}
+.settingoptions .tab-item .b.abc .img-up h6 {
+  font-size: 16px;
+  color: #000;
+  font-weight: 600;
+}
+.settingoptions .tab-item .b.abc .img-up p {
+  font-size: 14px;
+  color: #444;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 6px;
+}
+.settingoptions .tab-item .b.abc .img-up .img-part{
+  font-size: 200px;
+  color: #777;
+  font-weight: 400;
+  background: #f5f5f5;
+  line-height: 200px;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #000;
+  margin-top: 20px;
+}
+.settingoptions .tab-item .b.abc .img-up .img-input{
+  position: relative;
+}
+.settingoptions .tab-item .b.abc .img-up .img-input input{
+  color: transparent;
+  position: absolute;
+  top: 15px;
+  left: 0;
+  width: 100%;
+  padding: 8px;
+  cursor: pointer;
+  z-index: 1;
+}
+.settingoptions .tab-item .b.abc .img-up .img-input input::-webkit-file-upload-button{
+  visibility: hidden;
+}
+.settingoptions .tab-item .b.abc .img-up .img-input span{
+  position: absolute;
+  top: 15px;
+  left: 0;
+  background: #f5f5f5;
+  border: 1px solid #000;
+  width: 75%;
+  padding: 10px;
+  cursor: pointer;
+}
+.settingoptions .tab-item .b.abc .img-up .img-input .upload{
+  position: absolute;
+  top: 15px;
+  right: 0;
+  font-size: 16px;
+  color: #000;
+  font-weight: 600;
+  border: 1px solid #000;
+  border-left: none;
+  width: 25%;
+  padding: 10px;
+  cursor: pointer;
+}
+.settingoptions .tab-item .b.abc .img-up .bttn{
+  background: #000;
+  border: 1px solid #000;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 600;
+  padding: 10px 20px;
+  margin-top: 80px;
 }
 .settingoptions .tab-item .c.abc {
   background: blue;
