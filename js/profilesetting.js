@@ -1,7 +1,7 @@
 // Profile setting js//
 let abc = document.querySelector(".abc")
-let profilepicture = document.querySelector(".profilepicture")
-let privacysetting = document.querySelector(".privacysetting")
+// let profilepicture = document.querySelector(".profilepicture")
+// let privacysetting = document.querySelector(".privacysetting")
 let myList = document.querySelector(".my-list")
 let active = document.querySelector(".active")
 let udfile = document.querySelector(".up")
@@ -17,8 +17,8 @@ let udemyProf = () => {
     propic.classList.remove("active")
     proset.classList.remove("active")
     a.classList.add("abc")
-    b.classList.remove("profilepicture")
-    c.classList.remove("privacysetting")
+    b.classList.remove("abc")
+    c.classList.remove("abc")
   }
 }
 
@@ -27,9 +27,9 @@ let profic = () => {
     propic.classList.add("active")
     proset.classList.remove("active")
     udfile.classList.remove("active")
-    b.classList.add("profilepicture")
+    b.classList.add("abc")
     a.classList.remove("abc")
-    c.classList.remove("privacysetting")
+    c.classList.remove("abc")
   }
 }
 
@@ -38,8 +38,8 @@ let privSetting = () => {
     proset.classList.add("active")
     propic.classList.remove("active")
     udfile.classList.remove("active")
-    c.classList.add("privacysetting")
-    b.classList.remove("profilepicture")
+    c.classList.add("abc")
+    b.classList.remove("abc")
     a.classList.remove("abc")
   }
 }

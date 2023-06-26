@@ -62,73 +62,85 @@
   cursor: pointer;
 }
 .settingoptions .tab-item .a{
+  display: none;
+  visibility: hidden;
+}
+.settingoptions .tab-item .a.abc{
   padding-top: 30px;
   padding-bottom: 80px;
+  display: block;
+  visibility: visible;
 }
-.settingoptions .tab-item .a .firstname,
-.settingoptions .tab-item .a .lastname,
-.settingoptions .tab-item .a .headline,
-.settingoptions .tab-item .a .biography{
+.mt-30{
   margin-top: 30px;
 }
-.settingoptions .tab-item .a .firstname label,
-.settingoptions .tab-item .a .lastname label,
-.settingoptions .tab-item .a .headline label,
-.settingoptions .tab-item .a .biography label {
+.mt-10{
+  margin-top: 10px;
+}
+.settingoptions .tab-item .a.abc .firstname label,
+.settingoptions .tab-item .a.abc .lastname label,
+.settingoptions .tab-item .a.abc .headline label,
+.settingoptions .tab-item .a.abc .biography label,
+.settingoptions .tab-item .a.abc .website label, 
+.settingoptions .tab-item .a.abc .facebook label, 
+.settingoptions .tab-item .a.abc .twitter label, 
+.settingoptions .tab-item .a.abc .linkedin label, 
+.settingoptions .tab-item .a.abc .youtube label 
+{
   display: block;
   font-size: 16px;
   color: #000;
   font-weight: 600;
 }
-.settingoptions .tab-item .a .firstname input,
-.settingoptions .tab-item .a .lastname input,
-.settingoptions .tab-item .a .headline input {
+.settingoptions .tab-item .a.abc .lastname input,
+.settingoptions .tab-item .a.abc .firstname input,
+.settingoptions .tab-item .a.abc .headline input,
+.settingoptions .tab-item .a.abc .website input {
   width: 100%;
   padding: 10px;
-  margin-top: 10px;
   border: 1px solid #000;
   outline: 0;
 }
-.settingoptions .tab-item .a .biography input{
+.settingoptions .tab-item .a.abc .biography input{
   width: 100%;
   padding: 30px;
   border: 1px solid #000;
   outline: 0;
 }
-.settingoptions .tab-item .a .biography .customize-tools{
+.settingoptions .tab-item .a.abc .biography .customize-tools{
   border: 1px solid #000;
   border-bottom: none;
   padding: 10px;
   margin-top: 10px;
 }
-.settingoptions .tab-item .a .biography .customize-tools button{
+.settingoptions .tab-item .a.abc .biography .customize-tools button{
   background: none;
   border: none;
   font-size: 18px;
   color: #000;
   font-weight: 600;
 }
-.settingoptions .tab-item .a .biography .customize-tools .italic{
+.settingoptions .tab-item .a.abc .biography .customize-tools .italic{
   font-family: 'Poppins', sans-serif;
   font-style: italic;
   margin-left: 20px;
 }
-.settingoptions .tab-item .a .biography p{
+.settingoptions .tab-item .a.abc .biography p{
   font-size: 12px;
   font-weight: 400;
   margin-top: 10px;
 }
-.langu{
+.settingoptions .tab-item .a.abc .langu{
   margin-top: 20px;
 }
-.langu select{
+.settingoptions .tab-item .a.abc .langu select{
   width: 100%;
   border: 1px solid #000;
   font-size: 16px;
   color: #000;
   padding: 10px;
 }
-.settingoptions .tab-item .a form .bttn{
+.settingoptions .tab-item .a.abc form .bttn{
   background: #000;
   border: 1px solid #000;
   font-size: 16px;
@@ -137,11 +149,26 @@
   padding: 10px 20px;
   margin-top: 20px;
 }
-.settingoptions .tab-item .profilepicture {
+.settingoptions .tab-item .a.abc .links{
+  display: flex;
+}
+.settingoptions .tab-item .a.abc .links .url{
+  border: 1px solid #000;
+  border-right: none;
+  background: #f5f5f5;
+  padding: 10px;
+}
+.settingoptions .tab-item .a.abc .links input{
+  width: 61%;
+  padding: 10px;
+  border: 1px solid #000;
+  outline: 0;
+}
+.settingoptions .tab-item .b.abc {
   background: green;
   height: 400px;
 }
-.settingoptions .tab-item .privacysetting {
+.settingoptions .tab-item .c.abc {
   background: blue;
   height: 400px;
 }
