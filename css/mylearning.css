@@ -21,7 +21,20 @@
   #mylearning .learning-tab .tab-items .my-list li{
     color: #fff;
     padding: 0 25px 15px 0px;
+    cursor: pointer;
+  }
+  #mylearning .learning-tab .tab-items .my-list li.active{
+    border-bottom: 3px solid #fff;
   }
   #mylearning .learning-tab .mylearning-options{
     padding: 50px 0;
+  }
+
+  #mylearning .learning-tab .mylearning-options .allc.activeoption{
+    background: red;
+    height: 200px;
+  }
+  #mylearning .learning-tab .mylearning-options .arc.activeoption{
+    background: green;
+    height: 200px;
   }

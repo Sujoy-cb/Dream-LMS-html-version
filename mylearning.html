@@ -166,18 +166,15 @@
           <div class="tab-items">
           <div class="container">
               <ul class="my-list">
-                <li class="tabs up active" onclick="udemyProf()">Udemy profile</li>
-                <li class="tabs pp" onclick="profic()">Profile picture</li>
-                <li class="tabs ps" onclick="privSetting()">
-                  Privacy setting
-                </li>
+                <li class="tabs all active" onclick="allCourse()">All courses</li>
+                <li class="tabs ar" onclick="archived()">Archived</li>
               </ul>
             </div>
           </div>
           
           <div class="container">
             <div class="mylearning-options">
-              <div class="a setting abc">
+              <div class="allc setting activeoption">
                 <div class="row">
                   <div class="col-xl-6">
                     <form>
@@ -253,7 +250,7 @@
                   </div>
                 </div>
               </div>
-              <div class="b setting">
+              <div class="arc setting">
                 <div class="row">
                   <div class="col-xl-7">
                     <div class="img-up">
@@ -273,28 +270,6 @@
                     </div>
                   </div>
                   <div class="col-xl-5"></div>
-                </div>
-              </div>
-              <div class="c setting">
-                <div class="row">
-                  <div class="col-xl-6">
-                    <form>
-                  <div class="check mt-10">
-                    <input id="check-box1" type="checkbox" >
-                    <span><i class="fa-solid fa-check"></i></span>
-                    <label for="check-box1">Show your profile to logged-in users</label>
-                  </div>
-                  <div class="check mt-10">
-                    <input id="check-box2" type="checkbox">
-                    <span><i class="fa-solid fa-check"></i></span>
-                    <label for="check-box2">Show courses your're taking on your profile page</label>
-                  </div>
-                  <div class="button">
-                    <button class="bttn">Save</button>
-                  </div>
-                </form>
-                  </div>
-                  <div class="col-xl-6"></div>
                 </div>
               </div>
             </div>
@@ -358,6 +333,7 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/afterlogin.js"></script>
+    <script src="js/mylearning.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
