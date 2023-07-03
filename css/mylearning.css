@@ -1,5 +1,27 @@
 /* My learning CSS */
-#mylearning{
+#mylearning .learning-top{
     background: #111;
-    height: 300px;
+    padding-top: 50px;
 }
+#mylearning .heading h3 {
+    font-family: "Noto Serif KR", serif;
+    font-size: 40px;
+    color: #fff;
+    font-weight: 800;
+  }
+  #mylearning .learning-tab .tab-items{
+    background: #111;
+    padding-top: 20px;
+    display: flex;
+  }
+  #mylearning .learning-tab .tab-items .my-list{
+    background: #111;
+    display: flex;
+  }
+  #mylearning .learning-tab .tab-items .my-list li{
+    color: #fff;
+    padding: 0 25px 15px 0px;
+  }
+  #mylearning .learning-tab .mylearning-options{
+    padding: 50px 0;
+  }
