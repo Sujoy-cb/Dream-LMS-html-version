@@ -68,8 +68,7 @@
   visibility: hidden;
 }
 .settingoptions .tab-item .a.abc,
-.settingoptions .tab-item .b.abc,
-.settingoptions .tab-item .c.abc{
+.settingoptions .tab-item .b.abc{
   padding-top: 30px;
   padding-bottom: 80px;
   display: block;
@@ -244,7 +243,10 @@
   margin-top: 80px;
 }
 .settingoptions .tab-item .c.abc{
+  padding-top: 30px;
   padding-bottom: 300px;
+  display: block;
+  visibility: visible;
 }
 .settingoptions .tab-item .c.abc .check{
   position: relative;

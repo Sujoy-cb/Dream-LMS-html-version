@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Udemy-HTML version-after Login Home page</title>
+    <!-- Favicon -->
+    <link rel="icon" type="images/favicon" sizes="80x80" href="assets/images/favicon.png">
+    <!-- Css links -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/afterlogin.css">
+    <link rel="stylesheet" href="css/mylearning.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <!-- Navbar start -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/images/logo-udemy.png" alt="logo">
+          </a>
+          <!-- **** -->
+            <div class="res-menu">
+              <a class="res-nav" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                <i class="fa-solid fa-bars"></i>
+              </a> 
+              <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                  <span class="res-loginbtn">
+                    <a href="login.html">Log in</a>
+                  </span>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <div class="res-innerNav">
+                    <h5>Menu</h5>
+                    <ul class="res-navItem">
+                      <li><a href="#">Python</a></li>
+                      <li><a href="#"> Excel</a></li>
+                      <li><a href="#"> Web development</a></li>
+                      <li><a href="#"> JavaScript</a></li>
+                      <li><a href="#"> Data science</a></li>
+                      <li><a href="#"> Amazon AWS</a></li>
+                      <li><a href="#"> Graphic design</a></li>
+                      <li><a href="#"> Market places</a></li>
+                    </ul>
+                  </div>
+                  <div class="res-changeLanguage">
+                    <h5>Select language</h5>
+                    <div class="d-flex">
+                      <span class="p-3">English</span>
+                      <span class="p-3">Bengali</span>
+                    </div>
+                    <div class="d-flex">
+                      <span class="p-3">Hindi</span>
+                      <span class="p-3 ms-3">Spanish</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <!-- **** -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item drop" onclick="dropMenu()">
+                <a class="nav-link active" aria-current="page" href="#">Categories</a>
+                  <ul>
+                    <li><a href="#"> Python</a></li>
+                    <li><a href="#"> Excel</a></li>
+                    <li><a href="#"> Web development</a></li>
+                    <li><a href="#"> JavaScript</a></li>
+                    <li><a href="#"> Data science</a></li>
+                    <li><a href="#"> Amazon AWS</a></li>
+                    <li><a href="#"> Graphic design</a></li>
+                    <li><a href="#"> Market places</a></li>
+                  </ul>
+              </li>
+            </ul>
+            <form class="nav-srch me-auto" action="#">
+                <div class="searchbar">
+                    <button type="submit" class="srch-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <input type="text" placeholder="Search for anything">
+                </div>
+            </form>
+            <ul class="afterlogin-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Instructor</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">My learning</a>
+              </li>
+            </ul>
+          </div>
+          <span class="heart">
+            <a href="#"><i class="fa-regular fa-heart"></i></a>
+          </span>
+          <span class="cart">
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+          </span>
+          <span class="bell">
+            <a href="#"><i class="fa-regular fa-bell"></i></a>
+          </span>
+          <div class="profile" onclick="profileShow()">
+            <img src="./assets/images/profile-img.png" alt="profile-img">
+            <!-- <h5>SC</h5> -->
+            <div class="pro-drop">
+              <div class="pro-details">
+                <div class="pro-img">
+                  <img src="./assets/images/profile-img.png" alt="profile-img">
+                </div>
+                <div class="name-email">
+                  <h6 class="user-name">SujoyC</h6>
+                  <p class="email">sujoy.mdev@gmail.com</p>
+                </div>
+              </div>
+              <div class="profile-list">
+                <ul>
+                  <li><a href="#">My learning</a></li>
+                  <li><a href="#">My cart</a></li>
+                  <li><a href="#">Whishlist</a></li>
+                  <li><a href="#">Instructor dashboard</a></li>
+                </ul>
+                <ul>
+                  <li><a href="#">Notifications</a></li>
+                  <li><a href="#">Messages</a></li>
+                </ul>
+                <ul>
+                  <li><a href="#">Account settings</a></li>
+                  <li><a href="#">Payment methods</a></li>
+                  <li><a href="#">Subscriptions</a></li>
+                  <li><a href="#">Udemy credits</a></li>
+                  <li><a href="#">Purchase history</a></li>
+                </ul>
+                <ul>
+                  <li><a href="#">Public profile</a></li>
+                  <li><a href="profilesetting.html">Edit profile</a></li>
+                </ul>
+                <ul>
+                  <li><a href="#">Help</a></li>
+                  <li><a href="#">Log out</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+    </nav>
+    <!-- Navbar end -->
+
+    <!-- My Learing start -->
+    <section id="mylearning"></section>
+    <!-- My Learing end -->
+
+
+    <!-- Footer part start -->
+    <footer id="footer-part">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-3 col-md-3">
+            <ul>
+              <li><a href="#">Udemy Business </a></li>
+              <li><a href="#">Teach on Udemy </a></li>
+              <li><a href="#">Get the app </a></li>
+              <li><a href="#">About us </a></li>
+              <li><a href="#">Contact us </a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-3">
+            <ul>
+              <li><a href="#"> Careers </a></li>
+              <li><a href="#"> Our Blog </a></li>
+              <li><a href="#"> Help & Support </a></li>
+              <li><a href="#"> Affiliate </a></li>
+              <li><a href="#"> Investors </a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-3">
+            <ul>
+              <li><a href="#"> Terms & Conditions</a></li>
+              <li><a href="#"> Privacy policy</a></li>
+              <li><a href="#"> Cookie settings</a></li>
+              <li><a href="#"> Sitemap</a></li>
+              <li><a href="#"> Accessibility statement</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-3">
+            <div class="img">
+              <img src="./assets/images/footer-logo.png" alt="footer-logo">
+            </div>
+            <p>&#169 2023 Copyright</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer part end -->
+
+
+
+    <!-- Js links -->
+    <script src="js/code.jquery.com_jquery-1.12.4.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/afterlogin.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
