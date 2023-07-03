@@ -1,4 +1,7 @@
 /* My learning CSS */
+#mylearning{
+  padding-bottom: 80px;
+}
 #mylearning .learning-top{
     background: #111;
     padding-top: 50px;
@@ -29,12 +32,89 @@
   #mylearning .learning-tab .mylearning-options{
     padding: 50px 0;
   }
+  #mylearning .learning-tab .mylearning-options .allc{
+    display: none;
+  }
 
   #mylearning .learning-tab .mylearning-options .allc.activeoption{
-    background: red;
-    height: 200px;
+    display: block;
+  }
+  #mylearning .learning-tab .mylearning-options .allc.activeoption .course-list,
+  #mylearning .learning-tab .mylearning-options .arc.activeoption .course-list{
+    display: flex;
+  }
+  #mylearning .learning-tab .mylearning-options .allc.activeoption .course-list .course-item,
+  #mylearning .learning-tab .mylearning-options .arc.activeoption .course-list .course-item{
+    width: 25%;
+    position: relative;
+    margin-right: 20px;
+  }
+  #mylearning .learning-tab .mylearning-options .allc.activeoption .course-list .course-item .overlay,
+  #mylearning .learning-tab .mylearning-options .arc.activeoption .course-list .course-item .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: .5s;
+  }
+  #mylearning .learning-tab .mylearning-options .allc.activeoption .course-list .course-item:hover .overlay,
+  #mylearning .learning-tab .mylearning-options .arc.activeoption .course-list .course-item:hover .overlay{
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #mylearning .learning-tab .mylearning-options .allc.activeoption .course-list .course-item .overlay button,
+  #mylearning .learning-tab .mylearning-options .arc.activeoption .course-list .course-item .overlay button{
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    line-height: 26px;
+    background: transparent;
+    border: 1px solid transparent;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  #mylearning .learning-tab .mylearning-options .allc.activeoption .course-list .course-item .overlay button:hover,
+  #mylearning .learning-tab .mylearning-options .arc.activeoption .course-list .course-item .overlay button:hover{
+    color: #F86F03;
+  }
+  #mylearning .learning-tab .mylearning-options .allc.activeoption .course-list .course-item .img img,
+  #mylearning .learning-tab .mylearning-options .arc.activeoption .course-list .course-item .img img{
+    width: 100%;
+  }
+  #mylearning .learning-tab .mylearning-options .allc.activeoption .course-list .course-item .details,
+  #mylearning .learning-tab .mylearning-options .arc.activeoption .course-list .course-item .details{
+    border-bottom: 2px solid #999;
+    padding: 10px 8px;
+  }
+  #mylearning .learning-tab .mylearning-options .arc.activeoption .course-list .course-item .details h5,
+  #mylearning .learning-tab .mylearning-options .allc.activeoption .course-list .course-item .details h5{
+    font-size: 18px;
+    color: #444;
+    font-weight: 600;
+  }
+  #mylearning .learning-tab .mylearning-options .allc.activeoption .course-list .course-item .details p,
+  #mylearning .learning-tab .mylearning-options .arc.activeoption .course-list .course-item .details p{
+    font-size: 15px;
+    color: #777;
+    font-weight: 400;
+    padding: 10px 0;
+  }
+  #mylearning .learning-tab .mylearning-options .arc{
+    display: none;
   }
   #mylearning .learning-tab .mylearning-options .arc.activeoption{
-    background: green;
-    height: 200px;
+    display: block;
   }
