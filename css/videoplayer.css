@@ -7,6 +7,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border-right: 1px solid #444;
 }
 #video-nav .logo img{
     width: 135px;
@@ -21,9 +22,40 @@
 #video-nav .title h5{
     font-size: 18px;
     color: #fff;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 36px;
 }
 #video-nav .progress-share{
-    background: yellow;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#video-nav .progress-share .progress-br{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#video-nav .progress-share .progress-br .progressbar{
+    width: 40px;
+    height: 40px;
+    border: 2px solid #777;
+    border-radius: 50%;
+}
+#video-nav .progress-share .progress-br p{
+    display: inline-block;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 400;
+    line-height: 24px;
+}
+#video-nav .progress-share .share{
+    width: 30%;
+    background: green;
+    height: 50px;
+}
+#video-nav .progress-share .option{
+    width: 15%;
+    background: blue;
+    height: 50px;
 }
