@@ -51,11 +51,18 @@
 }
 #video-nav .progress-share .share{
     width: 30%;
-    background: green;
-    height: 50px;
+    display: flex;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 8px;
+}
+#video-nav .progress-share .share span{
+    margin-left: 10px;
 }
 #video-nav .progress-share .option{
     width: 15%;
-    background: blue;
-    height: 50px;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 8px;
+    text-align: center;
 }
