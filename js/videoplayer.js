@@ -1,35 +1,30 @@
-// Video Player Jquery //
+// Video description JS //
 
-const player = new Plyr('video', {captions: {active: true}});
+let myList = document.querySelector(".my-list")
+let active = document.querySelector(".onactive")
 
-// Expose player so it can be used from the console
-window.player = player;
+let vinfo = document.querySelector(".vinfo")
+let vreview = document.querySelector(".vreview")
 
-
-
-
-// Video description functions //
-
-let ov = document.querySelector(".overview")
-let active = document.querySelector(".active")
+let des = document.querySelector(".description")
+let allreview = document.querySelector(".allreview")
 
 
-let videoinfo = document.querySelector(".info")
-let videoreview = document.querySelector(".review")
-
-
-let videoInfo = ()=>{
-    if(active.classList.contains("active")){
-        videoinfo.classList.add("active")
-        videoreview.classList.remove("active")
-    }
+let videoInfo= ()=>{
+        vinfo.classList.add("onactive")
+        vreview.classList.remove("onactive")
+        des.classList.add("show")
+        allreview.classList.remove("show")
+    
 }
 
-let videoReivew = ()=>{
-    if(active.classList.contains("active")){
-        videoreview.classList.add("active")
-        videoinfo.classList.remove("active")
-    }
+
+let videoReview= ()=>{
+        vreview.classList.add("onactive")
+        vinfo.classList.remove("onactive")
+        allreview.classList.add("show")
+        des.classList.remove("show")
+    
 }
 
 

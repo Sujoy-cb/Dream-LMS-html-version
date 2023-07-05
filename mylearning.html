@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Udemy-HTML version-after Login Home page</title>
+    <title>Udemy-HTML version-Home page</title>
     <!-- Favicon -->
     <link rel="icon" type="images/favicon" sizes="80x80" href="assets/images/favicon.png">
     <!-- Css links -->
@@ -12,8 +12,6 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/afterlogin.css">
-    <link rel="stylesheet" href="css/mylearning.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
@@ -21,7 +19,7 @@
     <!-- Navbar start -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand" href="#">
             <img src="assets/images/logo-udemy.png" alt="logo">
           </a>
           <!-- **** -->
@@ -80,6 +78,9 @@
                     <li><a href="#"> Market places</a></li>
                   </ul>
               </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="teachonudemy.html">Teach on Udemy</a>
+              </li>
             </ul>
             <form class="nav-srch me-auto" action="#">
                 <div class="searchbar">
@@ -87,199 +88,284 @@
                     <input type="text" placeholder="Search for anything">
                 </div>
             </form>
-            <ul class="afterlogin-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Instructor</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">My learning</a>
-              </li>
-            </ul>
           </div>
-          <span class="heart">
-            <a href="#"><i class="fa-regular fa-heart"></i></a>
-          </span>
           <span class="cart">
             <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
           </span>
-          <span class="bell">
-            <a href="#"><i class="fa-regular fa-bell"></i></a>
+          <span class="loginbtn">
+            <a href="login.html">Log in</a>
           </span>
-          <div class="profile" onclick="profileShow()">
-            <img src="./assets/images/profile-img.png" alt="profile-img">
-            <!-- <h5>SC</h5> -->
-            <div class="pro-drop">
-              <div class="pro-details">
-                <div class="pro-img">
-                  <img src="./assets/images/profile-img.png" alt="profile-img">
-                </div>
-                <div class="name-email">
-                  <h6 class="user-name">SujoyC</h6>
-                  <p class="email">sujoy.mdev@gmail.com</p>
-                </div>
+          <span class="language" onclick="languageChange()">
+            <i class="fa-solid fa-globe"></i>
+            <div class="changeLanguage">
+              <div class="d-flex">
+                <span class="p-3">English</span>
+                <span class="p-3">Bengali</span>
               </div>
-              <div class="profile-list">
-                <ul>
-                  <li><a href="#">My learning</a></li>
-                  <li><a href="#">My cart</a></li>
-                  <li><a href="#">Whishlist</a></li>
-                  <li><a href="#">Instructor dashboard</a></li>
-                </ul>
-                <ul>
-                  <li><a href="#">Notifications</a></li>
-                  <li><a href="#">Messages</a></li>
-                </ul>
-                <ul>
-                  <li><a href="#">Account settings</a></li>
-                  <li><a href="#">Payment methods</a></li>
-                  <li><a href="#">Subscriptions</a></li>
-                  <li><a href="#">Udemy credits</a></li>
-                  <li><a href="#">Purchase history</a></li>
-                </ul>
-                <ul>
-                  <li><a href="#">Public profile</a></li>
-                  <li><a href="profilesetting.html">Edit profile</a></li>
-                </ul>
-                <ul>
-                  <li><a href="#">Help</a></li>
-                  <li><a href="#">Log out</a></li>
-                </ul>
+              <div class="d-flex">
+                <span class="p-3">Hindi</span>
+                <span class="p-3 ms-3">Spanish</span>
               </div>
             </div>
-          </div>
+          </span>
         </div>
-    </nav>
+      </nav>
     <!-- Navbar end -->
 
-    <!-- My Learing start -->
-    <section id="mylearning">
-      <div class="learning-top">
-        <div class="container">
-          <div class="heading">
-            <h3>My learning</h3>
+    <!-- Banner start -->
+    <section id="banner">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-5">
+            <div class="banner-text">
+              <h1>Learning that gets you</h1>
+              <p>Skills for your present (and your future). Get started with us.</p>
+            </div>
           </div>
+          <div class="col-lg-7"></div>
         </div>
+        
       </div>
-     
-          <!-- click items start -->
-        <div class="learning-tab">
-          <div class="tab-items">
-          <div class="container">
-              <ul class="my-list">
-                <li class="tabs all active" onclick="allCourse()">All courses</li>
-                <li class="tabs ar" onclick="archived()">Archived</li>
+    </section>
+    <!-- Banner end -->
+    <!-- Course selection start -->
+    <section id="course-selection">
+      <div class="container-fluid">
+        <div class="heading">
+          <h2>A board selection of courses</h2>
+          <p>Choose from 210,000 online video courses with new addtions published every month</p>
+        </div>
+        <div class="row mt-5">
+          <div class="col-xl-3 col-md-6 col-lg-4">
+            <div class="selecting-option">
+              <ul>
+                <li class="chooseItem active">Python</li>
+                <li class="chooseItem">Excel</li>
+                <li class="chooseItem">Web development</li>
+                <li class="chooseItem">JavaScript</li>
+                <li class="chooseItem">Data science</li>
+                <li class="chooseItem">Amazon AWS</li>
+                <li class="chooseItem">Graphic design</li>
+                <li class="chooseItem">Market places</li>
               </ul>
             </div>
           </div>
-          
-          <div class="container">
-            <div class="mylearning-options">
-              <div class="allc setting activeoption">
-                <div class="course-list">
-                  <div class="course-item">
-                    <div class="overlay">
-                      <div class="buttons">
-                        <button class="start-btn">Start Course</button>
-                        <button class="archive mt-2">Add to archive</button>
-                      </div>
-                    </div>
-                    <div class="img">
-                      <img src="./assets/images/python2.png" alt="python2">
-                    </div>
-                    <div class="details">
-                      <h5>The complete Python Bootcamp from zero to hero</h5>
-                      <p>Jose Portilla</p>
-                    </div>
+          <div class="col-xl-9 col-md-6 col-lg-8">
+            <div class="videos-option">
+              <div class="video-slider">
+                <div class="slider-item">
+                  <div class="img">
+                    <img src="./assets/images/python1.png" alt="python1">
                   </div>
-                  <div class="course-item">
-                    <div class="overlay">
-                      <div class="buttons">
-                        <button class="start-btn">Start Course</button>
-                        <button class="archive mt-2">Add to archive</button>
-                      </div>
+                  <div class="details">
+                    <h5>The complete Python Bootcamp from zero to hero</h5>
+                    <p>Jose Portilla</p>
+                    <div class="rating mt-2">
+                      <span class="point">4.6</span>
+                      <span class="stars">
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star-half-stroke"></i></span>
+                      </span>
+                      <span class="point">(42,356)</span>
                     </div>
-                    <div class="img">
-                      <img src="./assets/images/python2.png" alt="python2">
-                    </div>
-                    <div class="details">
-                      <h5>The complete Python Bootcamp from zero to hero</h5>
-                      <p>Jose Portilla</p>
-                    </div>
-                  </div>
-                  <div class="course-item">
-                    <div class="overlay">
-                      <div class="buttons">
-                        <button class="start-btn">Start Course</button>
-                        <button class="archive mt-2">Add to archive</button>
-                      </div>
-                    </div>
-                    <div class="img">
-                      <img src="./assets/images/python2.png" alt="python2">
-                    </div>
-                    <div class="details">
-                      <h5>The complete Python Bootcamp from zero to hero</h5>
-                      <p>Jose Portilla</p>
-                    </div>
-                  </div>
-                  <div class="course-item">
-                    <div class="overlay">
-                      <div class="buttons">
-                        <button class="start-btn">Start Course</button>
-                        <button class="archive mt-2">Add to archive</button>
-                      </div>
-                    </div>
-                    <div class="img">
-                      <img src="./assets/images/python2.png" alt="python2">
-                    </div>
-                    <div class="details">
-                      <h5>The complete Python Bootcamp from zero to hero</h5>
-                      <p>Jose Portilla</p>
+                    <div class="price">
+                      <h6>$84.99</h6>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="arc setting">
-                <div class="course-list">
-                  <div class="course-item">
-                    <div class="overlay">
-                      <div class="buttons">
-                        <button class="start-btn">Start Course</button>
-                      </div>
+                <div class="slider-item">
+                  <div class="img">
+                    <img src="./assets/images/python2.png" alt="python2">
+                  </div>
+                  <div class="details">
+                    <h5>The complete Python Bootcamp from zero to hero</h5>
+                    <p>Jose Portilla</p>
+                    <div class="rating mt-2">
+                      <span class="point">4.6</span>
+                      <span class="stars">
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star-half-stroke"></i></span>
+                      </span>
+                      <span class="point">(42,356)</span>
                     </div>
-                    <div class="img">
-                      <img src="./assets/images/python2.png" alt="python2">
-                    </div>
-                    <div class="details">
-                      <h5>The complete Python Bootcamp from zero to hero</h5>
-                      <p>Jose Portilla</p>
+                    <div class="price">
+                      <h6>$84.99</h6>
                     </div>
                   </div>
-                  <div class="course-item">
-                    <div class="overlay">
-                      <div class="buttons">
-                        <button class="start-btn">Start Course</button>
-                      </div>
+                </div>
+                <div class="slider-item">
+                  <div class="img">
+                    <img src="./assets/images/python3.png" alt="python3">
+                  </div>
+                  <div class="details">
+                    <h5>The complete Python Bootcamp from zero to hero</h5>
+                    <p>Jose Portilla</p>
+                    <div class="rating mt-2">
+                      <span class="point">4.6</span>
+                      <span class="stars">
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star-half-stroke"></i></span>
+                      </span>
+                      <span class="point">(42,356)</span>
                     </div>
-                    <div class="img">
-                      <img src="./assets/images/python2.png" alt="python2">
+                    <div class="price">
+                      <h6>$84.99</h6>
                     </div>
-                    <div class="details">
-                      <h5>The complete Python Bootcamp from zero to hero</h5>
-                      <p>Jose Portilla</p>
+                  </div>
+                </div>
+                <div class="slider-item">
+                  <div class="img">
+                    <img src="./assets/images/python5.png" alt="python4">
+                  </div>
+                  <div class="details">
+                    <h5>The complete Python Bootcamp from zero to hero</h5>
+                    <p>Jose Portilla</p>
+                    <div class="rating mt-2">
+                      <span class="point">4.6</span>
+                      <span class="stars">
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star-half-stroke"></i></span>
+                      </span>
+                      <span class="point">(42,356)</span>
+                    </div>
+                    <div class="price">
+                      <h6>$84.99</h6>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            
           </div>
         </div>
-        <!-- click items end -->
-      
-      
+      </div>
     </section>
-    <!-- My Learing end -->
+    <!-- Course selection end -->
 
+    <!-- Review part start -->
+    <section id="review-part">
+      <div class="container-fluid">
+        <div class="heading">
+          <h2>Reviews of learners</h2>
+        </div>
+        <div class="row mt-5">
+          <div class="col-lg-2"></div>
+          <div class="col-lg-8">
+            <div class="review-slider">
+              <div class="slider-item">
+                  <div class="review-text">
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum <strong>is that it has a more-or-less normal distribution of letters, as opposed to using</strong> 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use.</p>
+                  </div>
+                  <div class="image">
+                    <div class="img">
+                      <img src="./assets/images/review1.png" alt="review1">
+                      <h6 class="name">Jhon Boston</h6>
+                      <p class="desig">Web developer</p>
+                    </div>
+                  </div>
+                
+              </div>
+              <div class="slider-item">
+                  <div class="review-text">
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum <strong>is that it has a more-or-less normal distribution of letters, as opposed to using</strong> 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use.</p>
+                  </div>
+                  <div class="image">
+                    <div class="img">
+                      <img src="./assets/images/review2.png" alt="review2">
+                      <h6 class="name">Jim Hegmen</h6>
+                      <p class="desig">Web developer</p>
+                    </div>
+                  </div>
+                
+              </div>
+              <div class="slider-item">
+                  <div class="review-text">
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum <strong>is that it has a more-or-less normal distribution of letters, as opposed to using</strong> 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use.</p>
+                  </div>
+                  <div class="image">
+                    <div class="img">
+                      <img src="./assets/images/review3.png" alt="review3">
+                      <h6 class="name">Nikola Stepar</h6>
+                      <p class="desig">Sales Executive</p>
+                    </div>
+                  </div>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Review part end -->
+
+    <!-- Business part start -->
+    <section id="business-part">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-2"></div>
+          <div class="col-lg-4">
+            <div class="text">
+              <div class="ub-logo">
+                <img src="./assets/images/logo-ub.png" alt="logo-ub">
+              </div>
+              <h3>Upskill your team with <span>Udemy Business</span></h3>
+              <ul>
+                <li>Unlimited access to 22,000+ top Udemy courses, anytime, anywhere</li>
+                <li>International course collection in 14 languages</li>
+                <li>Top certifications in tech and business</li>
+              </ul>
+              <div class="btns">
+                <a class="business-btn" href="#">Get Udemy Business</a>
+                <a class="learnmore-btn" href="#">Learn more</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="img">
+              <img src="./assets/images/udemybusiness.jpg" alt="udemybusiness">
+            </div>
+          </div>
+          <div class="col-lg-2"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Business part end -->
+    <!-- Instructor part start -->
+    <section id="instructor-part">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-2"></div>
+          <div class="col-lg-4 col-sm-12">
+            <div class="img">
+              <img src="./assets/images/instructor.jpg" alt="instructor">
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-12">
+            <div class="text">
+              <h3>Become an instructor</h3>
+              <p>Instructors from around the world teach millions of students on Udemy. We provide the tools and skills to teach what you love.</p>
+              <div class="btns">
+                <a class="business-btn" href="#">Start teaching today</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Instructor part end -->
 
     <!-- Footer part start -->
     <footer id="footer-part">
@@ -330,8 +416,6 @@
     <script src="js/all.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/slick.min.js"></script>
-    <script src="js/afterlogin.js"></script>
-    <script src="js/mylearning.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

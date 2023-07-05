@@ -78,13 +78,13 @@
     height: 400px;
     position: relative;
 }
-#videoplayer .video-section .overview{
+#videoplayer .video-section .my-list{
     display: flex;
     border-bottom: 1px solid #999;
     margin-top: 30px;
 }
-#videoplayer .video-section .videinfo .overview .info,
-#videoplayer .video-section .videinfo .overview .review{
+#videoplayer .video-section .videinfo .my-list .vinfo,
+#videoplayer .video-section .videinfo .my-list .vreview{
     font-size: 20px;
     color: #444;
     font-weight: 600;
@@ -92,13 +92,31 @@
     margin-right: 30px;
     cursor: pointer;
 }
-#videoplayer .video-section .videinfo .overview .info:hover,
-#videoplayer .video-section .videinfo .overview .review:hover{
+#videoplayer .video-section .videinfo .my-list .vinfo:hover,
+#videoplayer .video-section .videinfo .my-list .vreview:hover{
     color: #000;
 }
-#videoplayer .video-section .videinfo .overview .info.active,
-#videoplayer .video-section .videinfo .overview .review.active{
+#videoplayer .video-section .videinfo .my-list .vinfo.onactive,
+#videoplayer .video-section .videinfo .my-list .vreview.onactive{
     color: rebeccapurple;
+}
+#videoplayer .video-section .down-part .description{
+    display: none;
+    visibility: hidden;
+}
+#videoplayer .video-section .down-part .description.show{
+    display: block;
+    visibility: visible;
+}
+#videoplayer .video-section .down-part .allreview{
+    display: none;
+    visibility: hidden;
+}
+#videoplayer .video-section .down-part .allreview.show{
+    display: block;
+    background: blue;
+    height: 300px;
+    visibility: visible;
 }
 #videoplayer .video-list{
     background: green;
