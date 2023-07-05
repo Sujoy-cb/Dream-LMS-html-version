@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/videoplayer.css">
+    <link rel="stylesheet" href="css/cdn.plyr.io_3.7.8_plyr.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
@@ -56,23 +57,21 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-xl-8">
-                    <div class="video-part video">
-                        <div class="video-inner">
-                            <span class="play"><i class="fa-solid fa-play"></i></span>
+                    <div class="video-section">
+                        <div class="video-part">
+                            <video id="player" playsinline controls data-poster="assets/images/thumbnail.jpg">
+                                <source src="./assets/video/JavaScript Bangla_Tutorial _JavaScript_Syntax.mp4" type="video/mp4" />
+                                <source src="/path/to/video.webm" type="video/webm" />
+                              
+                                <!-- Captions are optional -->
+                                <track kind="captions" label="English captions" src="/path/to/captions.vtt" srclang="en" default />
+                              </video>
                         </div>
-                        <div class="video-settings">
-                            <div class="playtime"></div>
-                            <div class="setting-buttons">
-                                <div class="left">
-                                    <span class="play"><i class="fa-solid fa-play"></i></span>
-                                    <span class="time ms-2">0:15/9:45</span>
-                                </div>
-                                <div class="right">
-                                    <span class="sound"><i class="fa-solid fa-volume-high"></i></span>
-                                    <span class="setting mx-2"><i class="fa-solid fa-gear"></i></span>
-                                    <span class="full-screen"><i class="fa-solid fa-expand"></i></span>
-                                </div>
-                            </div>
+                        <div class="videinfo">
+                            <ul class="overview">
+                                <li class="tabs info active" onclick="videoInfo()">Video info</li>
+                                <li class="tabs review" onclick="videoReivew()">Reviews</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -95,6 +94,7 @@
      <script src="js/bootstrap.bundle.min.js"></script>
      <script src="js/slick.min.js"></script>
      <script src="js/videoplayer.js"></script>
+     <script src="js/cdn.plyr.io_3.7.8_plyr.js"></script>
      <script src="js/script.js"></script>
 </body>
 </html>
