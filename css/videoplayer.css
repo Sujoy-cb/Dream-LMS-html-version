@@ -262,6 +262,21 @@
 #videoplayer .video-section .down-part .allreview.show .review-result .reviews .review-star .star-icon{
     margin-top: 6px;
 }
+#videoplayer .video-section .down-part .allreview.show .review-result .comments .review-box textarea{
+    width: 80%;
+    height: 100px;
+    resize: none;
+}
+
+#videoplayer .video-section .down-part .allreview.show .review-result .comments .review-box button{
+    display: inline-block;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    background: #000;
+    border: 1px solid #000;
+    padding: 10px 50px;
+}
 #videoplayer .video-list{
     background: green;
     height: 400px;

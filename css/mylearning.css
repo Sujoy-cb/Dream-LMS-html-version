@@ -70,25 +70,28 @@
     justify-content: center;
     align-items: center;
   }
-  #mylearning .learning-tab .mylearning-options .allc.activeoption .course-list .course-item .overlay button,
-  #mylearning .learning-tab .mylearning-options .arc.activeoption .course-list .course-item .overlay button{
+  #mylearning .learning-tab .mylearning-options .arc.activeoption .course-list .course-item .overlay .buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #mylearning .learning-tab .mylearning-options .allc.activeoption .course-list .course-item .overlay .buttons .start-btn,
+  #mylearning .learning-tab .mylearning-options .arc.activeoption .course-list .course-item .overlay .buttons .archive-btn{
     font-size: 16px;
-    color: #fff;
+    color: #fff !important;
     font-weight: 500;
     line-height: 26px;
     background: transparent;
     border: 1px solid transparent;
     width: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    display: inline-block;
   
   }
-  #mylearning .learning-tab .mylearning-options .allc.activeoption .course-list .course-item .overlay button:hover,
-  #mylearning .learning-tab .mylearning-options .arc.activeoption .course-list .course-item .overlay button:hover{
-    color: #F86F03;
+  
+  #mylearning .learning-tab .mylearning-options .allc.activeoption .course-list .course-item .overlay .buttons .start-btn:hover,
+  #mylearning .learning-tab .mylearning-options .arc.activeoption .course-list .course-item .overlay .buttons .archive-btn:hover{
+    color: #F86F03 !important;
   }
   #mylearning .learning-tab .mylearning-options .allc.activeoption .course-list .course-item .img img,
   #mylearning .learning-tab .mylearning-options .arc.activeoption .course-list .course-item .img img{
