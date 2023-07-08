@@ -331,3 +331,55 @@
     color: #111;
     font-weight: 600;
 }
+#videoplayer .video-list .video-serial .list{
+    width: 100%;
+}
+#videoplayer .video-list .video-serial .list li{
+    padding: 20px 10px;
+    cursor: pointer;
+}
+
+#videoplayer .video-list .video-serial .list .check{
+    position: relative;
+    cursor: pointer;
+}
+
+#videoplayer .video-list .video-serial .list .check label {
+    font-size: 16px;
+    color: #000;
+    font-weight: 400;
+    margin-left: 10px;
+    cursor: pointer;
+}
+#videoplayer .video-list .video-serial .list .check input[type="checkbox"]{
+    appearance: none;
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #000;
+}
+#videoplayer .video-list .video-serial .list .check input[type="checkbox"]:checked{
+    background: #000;
+}
+#videoplayer .video-list .video-serial .list .check span{
+    color: #fff;
+    position: absolute;
+    top: 19px;
+    left: 11px;
+    font-size: 14px;
+}
+#videoplayer .video-list .video-serial .list .check input[type="checkbox"]::after{
+    content: '\f00c';
+    color: #fff;
+    position: absolute;
+    top: 14px;
+    left: 12px;
+    font-size: 15px;
+    font-family: "Font Awesome 6.4.0 Free";
+    z-index: 1;
+}
+  
+#videoplayer .video-list .video-serial .list .check input[type="checkbox"]:checked:after{
+    color: #000;
+    display: none;
+}
