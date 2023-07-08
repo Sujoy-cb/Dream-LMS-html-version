@@ -94,6 +94,9 @@
     cursor: pointer;
 }
 /* ------------- */
+#videoplayer .video-section{
+    padding-bottom: 60px;
+}
 #videoplayer .video-section .video-part{
     background: #111;
     display: flex;
@@ -138,6 +141,9 @@
 #videoplayer .video-section .down-part .description{
     display: none;
     visibility: hidden;
+}
+#videoplayer .video-section .down-part .description.show .desc-item.instructor{
+    border: none;
 }
 #videoplayer .video-section .down-part .description.show .desc-item{
     border-bottom: 1px solid #999;
@@ -266,6 +272,8 @@
     width: 80%;
     height: 100px;
     resize: none;
+    padding: 10px;
+    outline: 0;
 }
 
 #videoplayer .video-section .down-part .allreview.show .review-result .comments .review-box button{
@@ -277,7 +285,40 @@
     border: 1px solid #000;
     padding: 10px 50px;
 }
-#videoplayer .video-list{
-    background: green;
-    height: 400px;
+#videoplayer .video-section .down-part .allreview.show .review-result .students-reviews{
+    border-bottom: 1px solid #bababa;
+    padding-bottom: 20px;
+}
+#videoplayer .video-section .down-part .allreview.show .review-result .students-reviews:last-child{
+    border: none;
+}
+#videoplayer .video-section .down-part .allreview.show .review-result .students-reviews .img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+}
+#videoplayer .video-section .down-part .allreview.show .review-result .students-reviews .img h6{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+}
+#videoplayer .video-section .down-part .allreview.show .review-result .students-reviews .pro-name h5{
+    font-size: 18px;
+    color: #111;
+    font-weight: 600;
+}
+#videoplayer .video-section .down-part .allreview.show .review-result .students-reviews .pro-name .star-icon{
+    color: #FFA41B;
+}
+#videoplayer .video-section .down-part .allreview.show .review-result .students-reviews .pro-name .star-icon p{
+    color: #444;
+}
+#videoplayer .video-list .video-serial{
+    background: #fff;
+    padding: 20px;
 }
