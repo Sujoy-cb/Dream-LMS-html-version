@@ -322,3 +322,12 @@
     background: #fff;
     padding: 20px;
 }
+#videoplayer .video-list .video-serial .heading{
+    border: 1px solid #999;
+    padding: 20px;
+}
+#videoplayer .video-list .video-serial .heading h6{
+    font-size: 20px;
+    color: #111;
+    font-weight: 600;
+}
